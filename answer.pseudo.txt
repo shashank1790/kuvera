@@ -1,0 +1,9 @@
+char randomGenerator(char name){
+int ran;
+char result[10];
+ran = rand()%15;
+if(ran<6)
+	ran+=6; // if random variable is less than 6 than add 6.
+sprintf(res, "%s%d", name,ran); // add name + random number
+return res; // return result
+}
